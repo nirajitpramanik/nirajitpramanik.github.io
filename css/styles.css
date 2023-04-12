@@ -1,0 +1,14 @@
+body {
+    background-color: #00ADB5;
+    color: #222831;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr {
+    background-color: none;
+    border-style: dotted none none none;
+    height: 1px; 
+    width: 10%;
+    border-color: #393E46;
+    border-width: 7px;
+}
