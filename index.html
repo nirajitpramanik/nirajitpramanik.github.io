@@ -1,224 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHSLXDZWWX"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHSLXDZWWX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'G-MHSLXDZWWX');
-        </script>
+        gtag('config', 'G-MHSLXDZWWX');
+    </script>
 
-        <title>Nirajit Pramanik</title>
-        <!--<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />-->
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="assets\css\styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Nirajit Pramanik</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets\img\Pfp_site.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+    <title>Profile Website</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <b>Nirajit Pramanik</b>
+        </div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <b>Nirajit Pramanik</b>
+        </div>
+
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/img/pfp.png" alt="Nirajit Pramanik profile picture">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Nirajit Pramanik</h1>
+            <p class="section__text__p2">Developer. Football. Drummer. Photographer.</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/img/Resume.pdf')">
+                    View Resume
+                </button>
+
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Get in touch
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/img/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/nirajit-pramanik/'">
+                <img src="./assets/img/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/nirajitpramanik'">
+            </div>
+        </div>
+        <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#about'">
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">
+            Get to know more
+        </p>
+
+        <h1 class="title">
+            About Me!
+        </h1>
+
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="icon-row">
+                    <img src="./assets/img/code.png" alt="Code" class="about-icon">
+                    <img src="./assets/img/football.png" alt="Football" class="about-icon">
+                    <img src="./assets/img/drum.png" alt="Drum" class="about-icon">
+                    <img src="./assets/img/camera.png" alt="Camera" class="about-icon">
+                </div>
+                
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/img/experience.png" alt="Experience icon" class="icon">
+                        <h3>
+                            Experience
+                        </h3>
+                        <p>
+                            3+ years
+                            <ul style="list-style: none;">
+                                <li>Full Stack Development</li>
+                                <li>Discord Bot Development</li>
+                                <li>Database Management</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/img/education.png" alt="Education icon" class="icon">
+                        <h3>
+                            Education
+                        </h3>
+                        <p><img src="./assets/img/loading.gif" alt="Loading icon" class="loading">B.Tech Computer Science <br> Specialisation in Artifical Intelligence and Machine Learning</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>
+                        Enthralled by the intricacies of artificial intelligence (AI) and machine learning (ML), I'm pursuing a Bachelor's degree in Computer Science with a specialization in these groundbreaking fields. Already into my second year, I've delved into fascinating concepts that fuel my passion for this domain. But my academic pursuits don't define me entirely. Web development also ignites my spirit, evidenced by the websites I've proudly launched online.
+                        <br><br>
+                        Football, however, occupies a special place in my heart. It's not just a spectator sport; I've been playing since the tender age of 4-5, culminating in the exhilarating achievement of competing at the national level. And when I'm not tackling academic or athletic challenges, music serves as my sanctuary. A dedicated drummer for over nine years, its soothing rhythms wash away the strains of the day. Photography, too, offers a unique lens through which I explore the world, capturing unseen beauty and fresh perspectives.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#experience'">
+
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Fullstack Development</h2>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Firebase</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Programming Languages</h2>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Dart</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Flutter</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Other Skills</h2>
+
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Artificial Intelligence</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Machine Learning</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Computer Vision</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Django</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/img/P1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">
+                        Python Assistant
+                    </h2>
+    
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nirajitpramanik/Python-Assistant'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/img/P3.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">
+                        Ignition Technologies Website
+                    </h2>
+    
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ignitiontechnologies/ignitiontechnologies.github.io'">
+                            GitHub
+                        </button>
+    
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ignitiontechnologies.github.io/'">
+                            Website
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/img/P2.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">
+                        AI Rock, Paper, Scissor
+                    </h2>
+    
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nirajitpramanik/AI-RPS'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/img/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+                <p>
+                    <a href="mailto:nirajit.pramanik15@gmail.com">
+                        nirajit.pramanik15@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/img/linkedin.png" alt="Email Icon" class="icon contact-icon">
+                <p>
+                    <a href="https://www.linkedin.com/in/nirajit-pramanik/">
+                        LinkedIn
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Nirajit
-                        <span class="text-primary">Pramanik</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Bengaluru, India
-                        <!--<a href="mailto:name@email.com">name@email.com</a>-->
-                    </div>
-                    <p class="lead mb-5">
-                        I am a student in the first year of my Bachelor's Degree in Computer Science with Specialisation in Artificial Intelligence and Machine Learning.
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/nirajit-pramanik/" target = "_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/nirajitpramanik" target = "_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://twitter.com/LeoJit15" target = "_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Operations and Management Lead</h3>
-                            <div class="subheading mb-3">Ignition Technologies</div>
-                            <p>Heading the operations department for this club/startup, I have been working to improve the face of the club. I also am the sole developer of the <a href="https://ignitiontechnologies.github.io" target="_blank">website</a>.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2023 - Present</span></div>
-                    </div>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Google Developer Student Club</h3>
-                            <div class="subheading mb-3">Web Development</div>
-                            <p>I am also a part of the GDSC in our college, VIT Chennai in the Web Development department.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2023 - Present</span></div>
-                    </div>
+        <p>
+            Copyright &#169; 2023 Nirajit Pramanik. All rights reserved.
+        </p>
+    </footer>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Discord Bot Developer</h3>
-                            <div class="subheading mb-3">Active Developer</div>
-                            <p>Picking up an interest in Discord's Bot development, I tried my hand out in it, and I now have a verified Discord bot, <a href="https://sites.google.com/view/Football-Scorer" target="_blank">Football Scorer</a>.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2021 - Present</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Freelance</div>
-                            <p>Freelancing with web development, I have developed a website for <a href="https://discordfootball.com" target = "_blank">Discord Football.</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2020 - Present</span></div>
-                    </div>
-                    
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Vellore Institute of Technology, Chennai</h3>
-                            <div class="subheading mb-3">Bachelor of Technology</div>
-                            <div>Computer Science with Specialisation in Artificial Intelligence and Machine Learning</div>
-                            <p>GPA(1st Semester): 9.82</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2022 - September 2026</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">AECS Magnolia Maaruti Public SChool</h3>
-                            <div class="subheading mb-3">High School - Grades 11 and 12</div>
-                            <p>Percentage: 94%</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2020-2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">National Public School, Banashankari</h3>
-                            <div class="subheading mb-3">School: Grades 4 - 10</div>
-                            <p>Percentage: 94.5%</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2014-2020</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        
-
-                    </ul>
-                    <div class="subheading mb-3">Projects</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://discordfootball.com" target="_blank">Discord Football Website</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://ignitiontechnologies.github.io" target="_blank">Ignition Technologies Website</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://github.com/nirajitpramanik/Python-Assistant" target="_blank">Python Assistant</a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://github.com/nirajitpramanik/wordle-remake" target="_blank">Wordle Remake</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>I have also played football at a national level at under 15 level, apart from being a drummer for nearly 8 years now. I also love photography a lot, as it helps me take my mind off the regular work and look at the world from a different perspective.</p>
-                    <p class="mb-0">I have also been a part of Intel's AI4Youth Program, and have completed an apprecticeship program with them in collaboration with Intel Singapore.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Discord's verified developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Intel Apprenticeship program
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Python (Basic) Hackerrank
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Rank - VIT Chennai - University Day, 1st Semester
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <script src="./assets/js/scripts.js"></script>
+</body>
 </html>
