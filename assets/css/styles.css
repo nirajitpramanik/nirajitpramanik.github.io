@@ -16,6 +16,7 @@ html {
 
 p {
     color: rgb(85, 85, 85);
+    line-height: 1.75;
 }
 
 /* Transition */
@@ -39,7 +40,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 a {
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .logo:hover {
@@ -72,6 +73,7 @@ a:hover {
 .hamburger-menu {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .hamburger-icon {

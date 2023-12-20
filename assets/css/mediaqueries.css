@@ -8,6 +8,10 @@
         flex-wrap: wrap;
     }
 
+    #contact, #projects {
+      height: fit-content;
+    }
+
     .icon-row {
         flex-wrap: wrap;
         justify-content: center;
@@ -90,7 +94,7 @@
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .nav-links {
