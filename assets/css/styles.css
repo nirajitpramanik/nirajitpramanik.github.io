@@ -16,7 +16,6 @@ html {
 
 p {
     color: rgb(85, 85, 85);
-    line-height: 1.75;
 }
 
 /* Transition */
@@ -321,6 +320,10 @@ section {
     padding: 1.5rem;
     display: flex;
     align-self: center;
+}
+
+.about-text {
+    line-height: 1.75;
 }
 
 /* Experience section */
