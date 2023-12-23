@@ -366,6 +366,10 @@ article .icon {
     cursor: default;
 }
 
+.experience-text {
+    font-size: x-small;
+}
+
 /* Projects Section */
 
 #projects {
