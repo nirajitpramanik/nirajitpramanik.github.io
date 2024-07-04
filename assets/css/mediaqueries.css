@@ -39,6 +39,16 @@
         display: none
     }
 
+    .arrow-1 {
+        display: none
+    }
+
+    .about-icon {
+        padding: 0.5rem;
+        width: 25px;
+        height: auto;
+    }
+
     section, .section-container {
         height: fit-content;
     }
@@ -55,6 +65,10 @@
 
     .about-containers {
         margin-top: 0;
+    }
+
+    p {
+        font-size: 0.9rem;
     }
 }
 
@@ -82,7 +96,7 @@
     }
 
     .contact-info-container {
-        margin: 0;
+        margin: 1rem;
     }
 
     .contact-info-container p, .nav-links li a {

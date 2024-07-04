@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profile website of Nirajit Pramanik">
+    <meta name="description" content="Profile website of Nirajit Pramanik.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nirajitpramanik.github.io/" />
+    <meta property="og:title" content="Nirajit Pramanik" />
+    <meta property="og:description" content="Profile website of Nirajit Pramanik." />
+    <meta property="og:image" content="https://github.com/nirajitpramanik/nirajitpramanik.github.io/blob/main/assets/img/pfp.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nirajitpramanik.github.io/" />
+    <meta property="twitter:title" content="Nirajit Pramanik" />
+    <meta property="twitter:description" content="Profile website of Nirajit Pramanik." />
+    <meta property="twitter:image" content="https://github.com/nirajitpramanik/nirajitpramanik.github.io/blob/main/assets/img/pfp.png" />
+
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHSLXDZWWX"></script>
     <script>
@@ -17,26 +32,33 @@
     <title>Nirajit Pramanik</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">
-            <b>Nirajit Pramanik</b>
-        </div>
+        <b>
+            <img class="nav-logo" alt="logo" src="./assets/img/logo.png" style="display: inline-block;">
+            Nirajit Pramanik
+        </b>
 
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#career">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="./assets/Resume-Nirajit Pramanik.pdf" download="Resume-Nirajit Pramanik">Resume</a></li>
             </ul>
         </div>
     </nav>
 
     <nav id="hamburger-nav">
         <div class="logo">
-            <b>Nirajit Pramanik</b>
+            <b>
+                <img class="nav-logo" src="./assets/img/logo.png" alt="Logo" style="display: inline-block;">
+                Nirajit Pramanik
+            </b>
         </div>
 
         <div class="hamburger-menu">
@@ -46,10 +68,14 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <ul class="nav-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#career" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="./assets/Resume-Nirajit Pramanik.pdf" download="Resume-Nirajit Pramanik">Resume</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -65,7 +91,7 @@
             <p class="section__text__p2">Developer. Footballer. Drummer. Photographer.</p>
 
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/img/Resume.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Nirajit Pramanik.pdf')">
                     View Resume
                 </button>
 
@@ -92,6 +118,7 @@
         </h1>
 
         <div class="section-container">
+            <img src="./assets/img/arrow-1.png" alt="Previous Section" class="icon arrow-1" onclick="location.href='#profile'">
             <div class="about-details-container">
                 <div class="icon-row">
                     <img src="./assets/img/code.png" alt="Code" class="about-icon">
@@ -127,9 +154,9 @@
 
                 <div class="text-container">
                     <p class="about-text">
-                        Enthralled by the intricacies of artificial intelligence (AI) and machine learning (ML), I'm pursuing a Bachelor's degree in Computer Science with a specialization in these groundbreaking fields. Already into my second year, I've delved into fascinating concepts that fuel my passion for this domain. But my academic pursuits don't define me entirely. Web development also ignites my spirit, evidenced by the websites I've proudly launched online.
+                        Artifical Intelligence (AI) and Machine Learning (ML) are two scopes that have always interested me since my early days of coding, and via that interest, I am now pursuing my Bachelor's degree in Computer Science with a specialization in these groundbreaking fields. Now that I am in my third year of my degree, I have learnt quite a bit about the different uses, and applications of this field, through real life experiences, hands on projects and the theory taught to me. All of these experiences have piqued my interest even more for this domain. Other than just academics, I hold a keen interest in Web development, and it is evident from the different websites that I have made!
                         <br><br>
-                        Football, however, occupies a special place in my heart. It's not just a spectator sport; I've been playing since the tender age of 4-5, culminating in the exhilarating achievement of competing at the national level. And when I'm not tackling academic or athletic challenges, music serves as my sanctuary. A dedicated drummer for over nine years, its soothing rhythms wash away the strains of the day. Photography, too, offers a unique lens through which I explore the world, capturing unseen beauty and fresh perspectives.
+                        However other than academics, I am a huge football fan, and it holds a special place in my heart. I have been playing football since my early years of around 4-5. Through time, I have loved the sport more and also have had a chance to play at the national level. Off the field and during my free time, music is my absolute go-to. As a dedicated drummer for over nine years, I often trust music to wash away the strains of the day. Photography is something that has always comforted me, as through the lens of my camera, I love finding a unique perspective of the never ending beauty of this world!
                     </p>
                 </div>
             </div>
@@ -138,8 +165,9 @@
     </section>
 
     <section id="experience">
+        <img src="./assets/img/arrow-1.png" alt="Previous Section" class="icon arrow-1" onclick="location.href='#about'">
         <p class="section__text__p1">Explore my</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Skills</h1>
 
         <div class="experience-details-container">
             <div class="about-containers">
@@ -204,7 +232,7 @@
                         <article>
                             <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
                             <div>
-                                <h3>C</h3>
+                                <h3>C/C++</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
@@ -212,8 +240,8 @@
                         <article>
                             <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
                             <div>
-                                <h3>C++</h3>
-                                <p>Intermediate</p>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
                             </div>
                         </article>
 
@@ -270,6 +298,14 @@
                                 <p>Experienced</p>
                             </div>
                         </article>
+
+                        <article>
+                            <img src="./assets/img/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
 
@@ -323,12 +359,67 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#projects'">
+        <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#career'">
     </section>
 
+    <section id="career">
+        <img src="./assets/img/arrow-1.png" alt="Previous Section" class="icon arrow-1" onclick="location.href='#experience'">
+        <p class="section__text__p1">My previous</p>
+        <h1 class="title">Work Experience</h1>
+        <div class="career-path">
+            <div class="timeline"></div>
+
+            <div class="career-company">
+                <img src="./assets/img/fractal.jpeg" alt="Fractal AI" class="company-logo">
+                <div class="career-item">
+                    <h3>Fractal</h3>
+                    <p><strong>Position:</strong> Project Intern</p>
+                    <p><strong>Duration:</strong> June 2024 - Present</p>
+                    <!--<p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>-->
+                </div>
+            </div>
+            
+            <div class="career-company">
+                <img src="./assets/img/code.png" alt="Freelance logo" class="company-logo">
+                <div class="career-item">
+                    <h3>Freelance Developer</h3>
+                    <p><strong>Position:</strong> Web Developer</p>
+                    <p><strong>Duration:</strong> December 2021 - Present</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Developed and maintained web applications using HTML, CSS and JS.</li>
+                        <li>Collaborated with multiple individuals and companies to create their website.</li>
+                        <li>Implemented new features and maintained existing code for performance and scalability.</li>
+                    </ul>
+                </div>
+                <div class="career-item">
+                    <p><strong>Position:</strong> Custom Software Development</p>
+                    <p><strong>Duration:</strong> December 2021 - Present</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Mainly involved in Discord Bot development for clients over the world.</li>
+                        <li>Maintained and renewed code with updating policies.</li>
+                        <li>Created multi-function bots using various technlogies like AWS and web scraping.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#projects'">
+    </section>      
+
     <section id="projects">
+        <img src="./assets/img/arrow-1.png" alt="Previous Section" class="icon arrow-1" onclick="location.href='#career'">
         <p class="section__text__p1">Browse my recent</p>
         <h1 class="title">Projects</h1>
+
+        <div class="text-container">
+            <p class="section__text">These are just a few, all of my projects are available on my <a href="https://github.com/nirajitpramanik">GitHub</a>!</p>
+        </div>
 
         <div class="experience-details-container">
             <div class="about-containers">
@@ -380,6 +471,25 @@
                         </button>
                     </div>
                 </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/img/P4.png" alt="Project 4" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">
+                        CGPA Calculator
+                    </h2>
+    
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nirajitpramanik/cgpa-calculator">
+                            GitHub
+                        </button>
+    
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://nirajitpramanik.github.io/cgpa-calculator/'">
+                            Website
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <img src="./assets/img/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='#contact'">
@@ -390,19 +500,25 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/img/email.png" alt="Email Icon" class="icon contact-icon email-icon">
                 <p>
-                    <a href="mailto:nirajit.pramanik15@gmail.com">
-                        nirajit.pramanik15@gmail.com
+                    <a href="mailto:nirajitpramanik@gmail.com">
+                        <img src="./assets/img/email.png" alt="Email Icon" class="icon contact-icon email-icon">
                     </a>
                 </p>
             </div>
 
             <div class="contact-info-container">
-                <img src="./assets/img/linkedin.png" alt="Email Icon" class="icon contact-icon">
                 <p>
                     <a href="https://www.linkedin.com/in/nirajit-pramanik/">
-                        LinkedIn
+                        <img src="./assets/img/linkedin.png" alt="Linkedin Icon" class="icon contact-icon">
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-info-container">
+                <p>
+                    <a href="https://www.github.com/nirajitpramanik/">
+                        <img src="./assets/img/github.png" alt="Github Icon" class="icon contact-icon">
                     </a>
                 </p>
             </div>
@@ -414,15 +530,17 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#career">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="./assets/Resume-Nirajit Pramanik.pdf" download="Resume-Nirajit Pramanik">Resume</a></li>
                 </ul>
             </div>
         </nav>
 
         <p>
-            Copyright &#169; 2023 Nirajit Pramanik. All rights reserved.
+            Copyright &#169; 2024 Nirajit Pramanik. All rights reserved.
         </p>
     </footer>
 
