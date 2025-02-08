@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile website of Nirajit Pramanik.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nirajitpramanik.github.io/" />
+    <meta property="og:title" content="Nirajit Pramanik" />
+    <meta property="og:description" content="Profile website of Nirajit Pramanik." />
+    <meta property="og:image" content="https://github.com/nirajitpramanik/nirajitpramanik.github.io/blob/main/assets/img/pfp.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nirajitpramanik.github.io/" />
+    <meta property="twitter:title" content="Nirajit Pramanik" />
+    <meta property="twitter:description" content="Profile website of Nirajit Pramanik." />
+    <meta property="twitter:image" content="https://github.com/nirajitpramanik/nirajitpramanik.github.io/blob/main/assets/img/pfp.png" />
+
+    <title>Nirajit Pramanik</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHSLXDZWWX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MHSLXDZWWX');
+    </script>
+
+</head>
+<body>
+    <div class="top-bar">
+      <div class="profile">
+        <img src="./assets/img/pfp.png" alt="Profile Photo" class="profile-photo">
+        <span class="profile-name">Nirajit Pramanik</span>
+      </div>
+    </div>
+
+    <div class="main-content">
+        <div class="terminal">
+            <div class="terminal-header">
+              <div class="buttons">
+                <span class="button close"></span>
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
+              </div>
+              <div class="title">user@portfolio: ~</div>
+            </div>
+            
+            <div class="terminal-tabs">
+              <div class="tab active" data-tab="whoami">whoami</div>
+              <div class="tab" data-tab="about">about.txt</div>
+              <div class="tab" data-tab="experience">experience/</div>
+              <div class="tab" data-tab="projects">projects/</div>
+              <div class="tab" data-tab="skills">skills.txt</div>
+              <div class="tab" data-tab="contact">contact.txt</div>
+            </div>
+        
+            <div class="terminal-body">
+              <!-- Initial Loading Animation -->
+              <div id="initial-loading">
+                <div class="loading-text">> Initializing system...</div>
+                <div class="loading-dots"></div>
+              </div>
+      
+              <!-- Content Container (initially hidden) -->
+              <div id="content-container" style="display: none;">
+                <!-- whoami section -->
+                <div class="terminal-content" id="whoami">
+                  <p class="command"></p>
+                  <div class="output" style="display: none;">
+                    <p>>
+                        Hello! I am Nirajit Pramanik, a third year Artifical Intelligence and Machine Learning student at Vellore Institute of Technology, Chennai.
+                    </p>
+                  </div>
+                </div>
+        
+              <!-- about section -->
+              <div class="terminal-content" id="about">
+                <p class="command">$ cat about.txt</p>
+                <div class="output">
+                  <p>
+                    Artifical Intelligence (AI) and Machine Learning (ML) are two scopes that have always interested me since my early days of coding, and via that interest, I am now pursuing my Bachelor's degree in Computer Science with a specialization in these groundbreaking fields. Now that I am in my third year of my degree, I have learnt quite a bit about the different uses, and applications of this field, through real life experiences, hands on projects and the theory taught to me. All of these experiences have piqued my interest even more for this domain. Other than just academics, I hold a keen interest in Web development, and it is evident from the different websites that I have made!
+                        <br><br>
+                    However other than academics, I am a huge football fan, and it holds a special place in my heart. I have been playing football since my early years of around 4-5. Through time, I have loved the sport more and also have had a chance to play at the national level. Off the field and during my free time, music is my absolute go-to. As a dedicated drummer for over nine years, I often trust music to wash away the strains of the day. Photography is something that has always comforted me, as through the lens of my camera, I love finding a unique perspective of the never ending beauty of this world!
+                  </p>
+                </div>
+              </div>
+
+              <!--Work Experience section-->
+              <div class="terminal-content" id="experience">
+                <p class="command">$ls -la work-experience</p>
+                <div class="output">
+                    <div class="project-item">
+                        <p>> MC Delivery Intern</p>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Company: Accenture</li>
+                                <li>Duration: Upcoming</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <p>> Project Intern</p>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Company: Fractal AI</li>
+                                <li>Duration: June 2024 - August 2024</li>
+                                <ul>
+                                    <li>> Worked in the CPG Consulting domain with one of the largest CPG clients for their Net Revenue development. Worked with AI models and learnt about different CPG topics.</li>
+                                    <li>> Got the chance to work with the GenAI team on creating a chatbot for Growth Revenue development using different agents and tech stacks. Delved into data visualisation and analysis to create a RAG model for the chatbot.</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <p>> Freelance Developer</p>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Duration: December 2021 - Present</li>
+                                <ul>
+                                    <li>> <b>Web Developer</b>: Worked as a web developer, developing sites for various communities and individuals. Using HTML, CSS, JavaScript and Django API, multiple sites were developed.</li>
+                                    <li>> <b>Discord Bot Developer</b>: Worked as a bot developer using Python language. By using the discord API, multiple bots were developed that were then hosted for the purpose of communities with over 80,000 members</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <p>> Apprentice</p>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Company: Intel Corporation</li>
+                                <li>Duration: June 2021 - July 2021</li>
+                                <ul>
+                                    <li>> Became a part of Intel's Apprenticeship program as a collaboration between CBSE India and NYC Singapore. Was a part of the 50 students selected from both countries as a part of this program.</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        
+              <!-- projects section -->
+              <div class="terminal-content" id="projects">
+                <p class="command">$ ls -la projects/</p>
+                <div class="output">
+                  <div class="project-item">
+                    <p>> Expense Tracker</p>
+                    <p class="project-desc">A fully functional application that allows you to track all your expenses and view different charts to map them. Also has many other features like spreadsheet mapping and debt tracking!</p>
+                    <p class="project-link">GitHub: <a href="https://github.com/nirajitpramanik/Expense-Tracker" target="_blank">https://github.com/nirajitpramanik/Expense-Tracker</a></p>
+                    <p class="tech-stack">Tech: Flutter, Dart</p>
+                  </div>
+
+                  <div class="project-item">
+                    <p>> Website Development</p>
+                    <p class="project-desc">
+                        Completed development of many websites that are for personal or public use. Some of them include:
+                        <ul>
+                            <li class="project-list-item">- <a href="https://main.d289a1s6c9stis.amplifyapp.com/" target="_blank"> Travel Journal Website</a>: Deployed using AWS, a travel journal website to keep memories of all the places visited.
+                            </li>
+                            <li class="project-list-item">- <a href="https://ignitiontechnologies.github.io/" target="_blank"> Ignition Website</a>: Created a now legacy website for my college club - Ignition.
+                            </li>
+                            <li class="project-list-item">- <a href="https://nirajitpramanik/github.io/cgpa-calculator/" target="_blank"> CGPA calculator Website</a>: A simple yet effective estimated CGPA/GPA calculator for VIT students.
+                            </li>
+                            <li class="project-list-item">- <a href="https://nirajitpramanik.github.io/football-scorer-website/" target="_blank"> Football Scorer Website</a>: A football related game website that provides blurred images of players to guess from.
+                            </li>
+                        </ul>
+                    </p>
+                    <p class="tech-stack">Tech: Python, HTML, CSS, JavaScript, AWS, GitHub</p>
+                  </div>
+                  
+                  <div class="project-item">
+                    <p>> Python Assistant</p>
+                    <p class="project-desc">A simple replica of Iron Man's assistant - JARVIS! Capable of handling simple tasks via voice commands.</p>
+                    <p class="project-link">GitHub: <a href="https://github.com/nirajitpramanik/Expense-Tracker" target="_blank">https://github.com/nirajitpramanik/Python-Assistant</a></p>
+                    <p class="tech-stack">Tech: Python, SpeechRecognition</p>
+                  </div>
+
+                  <div class="project-item">
+                    <p>> AI Rock, Paper, Scissor</p>
+                    <p class="project-desc">An AI based simple game tha tracks the user's gameplay and predicts the next move.</p>
+                    <p class="project-link">GitHub: <a href="https://github.com/nirajitpramanik/Expense-Tracker" target="_blank">https://github.com/nirajitpramanik/AI-RPS</a></p>
+                    <p class="tech-stack">Tech: Python</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- skills section -->
+              <div class="terminal-content" id="skills">
+                <p class="command">$ cat skills.txt</p>
+                <div class="output">
+                  <div class="skills-category">
+                    <p>> Full-Stack Development</p>
+                    <p>HTML, CSS, JavaScript, PostgreSQL, Git, Firebase</p>
+                  </div>
+                  <div class="skills-category">
+                    <p>> Programming Languages:</p>
+                    <p>Python, C, C++, SQL, Java, Flutter</p>
+                  </div>
+                  <div class="skills-category">
+                    <p>> Frameworks:</p>
+                    <p>tensorflow, Keras, PyTorch</p>
+                  </div>
+                  <div class="skills-category">
+                    <p>> Developer Tools:</p>
+                    <p>VS Code, Anaconda, Amazon Web Services, Power BI</p>
+                  </div>
+                  <div class="skills-category">
+                    <p>> Soft Skills:</p>
+                    <p>Leadership, Management, Teamwork, Communication, Creative thinking, Analytical & Problem solving, Time Management, Multilingual</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- contact section -->
+              <div class="terminal-content" id="contact">
+                <p class="command">$ cat contact.txt</p>
+                <div class="output">
+                  <ul>
+                    <li>📧 Email: nirajitpramanik@gmail.com</li>
+                    <li>🔗 GitHub: <a href="https://github.com/nirajitpramanik" target="_blank">github.com/nirajitpramanik</a></li>
+                    <li>💼 LinkedIn: <a href="https://linkedin.com/in/nirajit-pramanik" target="_blank">linkedin.com/in/nirajit-pramanik</a></li>
+                    <li><a href="./assets/Resume-Nirajit Pramanik.pdf" download="Resume-Nirajit Pramanik">📜 Resume</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Developer. Drummer. Footballer. Photographer</p>
+      </footer>
+
+    <script src="./assets/js/script.js"></script>
+</html>
