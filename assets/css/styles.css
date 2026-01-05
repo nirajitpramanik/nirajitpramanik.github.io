@@ -1,7 +1,7 @@
 /* Base styles */
 :root {
     --terminal-padding: 20px;
-    --terminal-width: 80%;
+    --terminal-width: 85%;
     --font-size-base: 16px;
     --header-height: 60px;
     --footer-height: 40px;
@@ -62,7 +62,7 @@ body {
 /* Terminal Container */
 .terminal {
     width: var(--terminal-width);
-    max-width: 800px;
+    max-width: 1100px;
     background: #111;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
@@ -113,7 +113,9 @@ body {
     display: flex;
     background: #1a1a1a;
     padding: 5px 5px 0;
-    overflow-x: auto;
+    overflow-x: visible;
+    flex-wrap: wrap;
+    gap: 4px;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -132,6 +134,8 @@ body {
     border-top-right-radius: 3px;
     white-space: nowrap;
     font-size: 0.9em;
+    flex: 1 1 140px;
+    text-align: center;
 }
 
 .tab.active {
@@ -181,6 +185,41 @@ body {
     margin-bottom: 20px;
     padding-left: 15px;
     border-left: 2px solid #00ff00;
+    display: block;
+}
+
+.project-item p {
+    margin: 2px 0;
+}
+
+.project-meta {
+    margin-left: 12px;
+    color: #00cc00;
+}
+
+.project-points {
+    margin: 6px 0 0 18px;
+    padding-left: 14px;
+    color: #00cc00;
+}
+
+.company-logo {
+    display: inline-block;
+    min-width: 120px;
+}
+
+.company-logo pre {
+    margin: 0;
+    padding: 6px 8px;
+    background: #000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.75em;
+    line-height: 1;
+    white-space: pre;
+    text-align: center;
 }
 
 .project-desc {
